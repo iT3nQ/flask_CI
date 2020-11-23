@@ -9,7 +9,7 @@ services:
             dockerfile: "Dockerfile.dev"
         image: "flaskapp:latest"
         ports:
-            - "3001:80"
+            - "3004:80"
         depends_on:
             - "redis-server"
         restart: "on-failure"
