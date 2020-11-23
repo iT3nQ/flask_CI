@@ -4,6 +4,6 @@ services:
 before-script:
     - docker-compose up -d --build
 script:
-    - docker-compose exec flaskapp python test_basics.python
+    - docker-compose exec flaskapp python test_basics.py
 after-script:
     - docker-compose down
