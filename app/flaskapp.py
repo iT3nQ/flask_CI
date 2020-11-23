@@ -21,6 +21,6 @@ def visit_counting():
     except RedisError:
         visits = "<i> I cannot connect to Redis, idk why </i>"
     html = "<h1> Number of visits : {}</h1>,\nHostname {}".format(visits, socket.gethostname())
-
+    return html
 if __name__ == "__main__":
     app.run(debug=True,port=80,host='0.0.0.0')
